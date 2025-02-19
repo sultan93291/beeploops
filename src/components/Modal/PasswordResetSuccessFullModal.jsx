@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import lock from "../../assets/images/lock.png";
-import { ColorRing } from "react-loader-spinner";
+
 
 const PasswordResetSuccessFullModal = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
@@ -41,15 +41,7 @@ const PasswordResetSuccessFullModal = ({ isOpen, onClose }) => {
           Please wait... You will be directed to the homepage soon.
         </p>
 
-        <ColorRing
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="color-ring-loading"
-          wrapperStyle={{}}
-          wrapperClass="color-ring-wrapper"
-          colors={["#696EFF", "#696EFF", "#696EFF", "#696EFF", "#7a7b9b"]}
-        />
+        
       </div>
     </div>
   );
